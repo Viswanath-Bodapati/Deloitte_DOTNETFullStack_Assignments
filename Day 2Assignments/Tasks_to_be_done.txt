@@ -1,0 +1,20 @@
+1.   Read Employee details from the user and display on console. 
+		Employee Id :  6546545
+		Employee Name   :  Scott
+		Employee Job :   Manager
+		Employee Salary :   85000	
+2.  Write a C# program to read product details from end user and display the following details:	
+		Product Id :  102566
+		Product Name :  LG Printer
+		Unit Price :   2500
+		Quantity :  20
+		Total Amount:    50000
+		Discount Amount:   5000
+		Final Amount :     45000
+		
+	Hint :   Total Amount need to be calculate based on the Unit Price and Quantity. 
+	
+		a.  If qty is greater than 10   ---    10% discount on total amount
+		b.  If qty is greater than 30   ---    20% discount on total amount 
+		c.  If qty is greater than 50   ---    30% discount  on total amount		
+ 
