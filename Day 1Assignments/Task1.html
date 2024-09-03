@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Assignment 1 - 2/09/24</h1>
+    <div>
+
+        <h3>Employee Number:</h3> &nbsp; 
+        <input type="text" id = "in1"/> 
+
+        <h3>Employee Name: </h3> &nbsp; 
+        <input type="text" id = "in2"/> 
+
+        <h3>Job: </h3> &nbsp; 
+        <input type="text" id = "in3"/>
+
+        <h3>Salary: </h3> &nbsp; 
+        <input type="text" id = "in4"/> <br/> <br/> &nbsp;
+
+        <input type = "button" value="Submit Details" onclick="submitDetails()" />
+
+        <br/>
+        <p id = "final"></p>
+
+        <br/> <br/>
+        <hr/><hr/><hr/>
+        
+        <fieldset>
+        <legend><h2>Output Screen: </h2></legend>
+        <h3>Employee Number:</h3> 
+        <p id = "out1"></p> 
+
+
+        <h3>Employee Name: </h3> 
+        <p id = "out2"></p> 
+
+        <h3>Job: </h3> 
+        <p id = "out3"></p> 
+
+        <h3>Salary: </h3>  
+        <p id = "out4"></p> 
+
+        </fieldset>
+        
+    </div>
+    
+
+    <script>
+        function submitDetails(){
+            let in1 = document.getElementById("in1");
+            let in2 = document.getElementById("in2");
+            let in3 = document.getElementById("in3");
+            let in4 = document.getElementById("in4");
+
+            let final = document.getElementById("final");
+            final.innerHTML = "Form Details Submitted."
+
+            let in1value = in1.value;
+            let in2value = in2.value;
+            let in3value = in3.value;
+            let in4value = in4.value;
+
+            let out1 = document.getElementById("out1");
+            let out2 = document.getElementById("out2");
+            let out3 = document.getElementById("out3");
+            let out4 = document.getElementById("out4");
+
+            out1.innerHTML = in1value;
+            out2.innerHTML = in2value;
+            out3.innerHTML = in3value;
+            out4.innerHTML = in4value;
+
+            alert("ALSO CHECK BROWSER CONSOLE !!");
+
+            console.log("Employee Number",out1.value,"Employee Name",out2.value,"Employee Job",out3.value,"Employee Salary",out4.value );
+
+        }
+    </script>
+</body>
+</html>

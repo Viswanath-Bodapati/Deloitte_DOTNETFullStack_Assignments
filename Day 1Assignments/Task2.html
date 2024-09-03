@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Assignemnts - 02/09/24</h1>
+
+    <div>
+        <h3>Product Name: </h3>
+        <input type="text" id="in1" />
+        <h3>Quantity: </h3>
+        <input type="text" id="in2" />
+        <h3>Price for single Product:</h3>
+        <input type="text" id="in3" />
+
+        <br/><br/>
+
+        <input type="button" value = "Submit" onclick="submitDetails()"/>
+    </div>
+
+    <p id ="final"></p>
+
+
+    <script>  
+
+        function submitDetails(){
+
+        let in1 = document.getElementById("in1").value;
+        let in2 = document.getElementById("in2").value;
+        let in3 = document.getElementById("in3").value;
+
+        let res = document.getElementById("final");
+
+        if (isNaN(in2) || isNaN(in3)){
+            res.innerHTML = "Please enter Number !!";
+        }
+        else{
+            let out;
+            let out1 = in2*in3;
+            if (in2>10){
+                out = out1 - (in2*0.1*in3);
+            }
+
+            else if (in2>20){
+                out = out1 - (in2*0.15*in3);
+            }
+
+            else if (in2>30) {
+                out = out1 - (in2*0.2*in3);
+            }
+            else{
+                out = out1;
+            }
+            
+            res.innerHTML = "Total Amount " + out; 
+        }
+
+    }
+        
+    </script>
+
+    
+</body>
+</html>

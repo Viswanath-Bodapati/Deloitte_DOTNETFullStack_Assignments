@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Assignments - 02/09/24</h1> 
+
+    <h3>First Number</h3>
+    <input type="number" id="in1" />
+    <h3>Second Number</h3>
+    <input type="number" id="in2" />
+
+    <h3>Choose the Mathematical Operation to be performed</h3>
+    <div>
+        <input type="button" value="Addition" onclick="updateAdd()"/> &nbsp;
+        <input type="button" value="Subtraction" onclick="updateSub()"/>&nbsp;
+        <input type="button" value="Multiply" onclick="updateMul()"/>&nbsp;
+        <input type="button" value="Division" onclick="updateDiv()"/>&nbsp;
+    </div>
+
+    <p id="result"></p>
+
+    <script>
+        function updateAdd(){
+            let num1 = parseFloat(document.getElementById("in1").value);
+            let num2 = parseFloat(document.getElementById("in2").value);
+            let res = document.getElementById("result");
+            res.innerHTML = "Result is " + (num1 + num2);
+        }
+        function updateSub(){
+            let num1 = parseFloat(document.getElementById("in1").value);
+            let num2 = parseFloat(document.getElementById("in2").value);
+            let res = document.getElementById("result");
+            res.innerHTML = "Result is " + (num1 - num2);
+        }
+        function updateMul(){
+            let num1 = parseFloat(document.getElementById("in1").value);
+            let num2 = parseFloat(document.getElementById("in2").value);
+            let res = document.getElementById("result");
+            res.innerHTML = "Result is " + (num1 * num2);
+        }
+        function updateDiv(){
+            let num1 = parseFloat(document.getElementById("in1").value);
+            let num2 = parseFloat(document.getElementById("in2").value);
+            let res = document.getElementById("result");
+            res.innerHTML = "Result is " + (num1 / num2);
+        }
+    </script>
+</body>
+</html>
